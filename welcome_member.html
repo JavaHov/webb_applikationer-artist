@@ -7,10 +7,44 @@
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 <body>
-<h2>Välkommen!</h2>
+
+<form_container>
+    <container_item><h2>Välkommen!</h2></container_item>
+    <br>
+    <container_item><h4>Välj skiva.</h4></container_item>
+    <container_item>
+        <form id="recordsForm">
+            <select id="records">
+                <option value="Earthling">Earthling</option>
+                <option value="Hours">Hours</option>
+                <option value="Heathen">Heathen</option>
+                <option value="Buddha Of Suburbia">Buddha of Suburbia</option>
+            </select>
+
+            <br>
+            <br>
+
+
+        </form>
+    </container_item>
+    <br>
+    <container_item><input type="checkbox" id="terms"><label> Godkänn köpvillkoren!</label></container_item>
+    <br>
+    <container_item><input type="button" id="order" value="Beställ"></container_item>
+    <br>
+    <br>
+    <container_item><label id="presentation"></label></container_item>
+
+
+
+</form_container>
+
+
 <br>
 <footer>
     <a href="index.html">till startsidan...</a>
 </footer>
+
+<script src="js/webshop.js"></script>
 </body>
 </html>
