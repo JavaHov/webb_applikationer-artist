@@ -8,43 +8,54 @@
 </head>
 <body>
 
-<form_container>
-    <container_item><h2>Välkommen!</h2></container_item>
-    <br>
-    <container_item><h4>Välj skiva.</h4></container_item>
-    <container_item>
-        <form id="recordsForm">
-            <select id="records">
-                <option value="Earthling">Earthling</option>
-                <option value="Hours">Hours</option>
-                <option value="Heathen">Heathen</option>
-                <option value="Buddha Of Suburbia">Buddha of Suburbia</option>
-            </select>
+<section class="grid-container">
 
-            <br>
-            <br>
+    <main>
+        <article>
+            <form_container>
+                <container_item><h2>Välkommen!</h2></container_item>
+                <br>
+                <container_item><h4>Välj skiva.</h4></container_item>
+                <container_item>
+                    <form id="recordsForm">
+                        <select id="records" onchange="changeImage()">
+                            <option value="dbearthling">Earthling</option>
+                            <option value="dbhours">Hours</option>
+                            <option value="dbheathen">Heathen</option>
+                            <option value="dbbuddhaofs">Buddha of Suburbia</option>
+                        </select>
 
+                        <br>
+                        <br>
+                    </form>
 
-        </form>
-    </container_item>
-    <br>
-    <container_item><input type="checkbox" id="terms"><label> Godkänn köpvillkoren!</label></container_item>
-    <br>
-    <container_item><input type="button" id="order" value="Beställ"></container_item>
-    <br>
-    <br>
-    <container_item><label id="presentation"></label></container_item>
+                </container_item>
+                <br>
+                <container_item><input type="checkbox" id="terms"><label> Godkänn köpvillkoren!</label></container_item>
+                <br>
+                <container_item><input type="button" id="order" value="Beställ"></container_item>
+                <br>
+                <br>
+                <container_item><label id="presentation"></label></container_item>
+                <ul id="recordlist"></ul>
+                <container_item></container_item>
 
+            </form_container>
+        </article>
+        <article>
+            <img src="img/db2.jpg" alt="" class="start_img" id="record_images"/>
+        </article>
 
+        <article><a href="index.html">till startsidan...</a></article>
 
-</form_container>
-
-
+    </main>
 <br>
 <footer>
-    <a href="index.html">till startsidan...</a>
+
 </footer>
 
 <script src="js/webshop.js"></script>
+
+</section>
 </body>
 </html>
