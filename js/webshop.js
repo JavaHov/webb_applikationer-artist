@@ -6,7 +6,8 @@ const termsCheckbox = document.querySelector("#terms");
 const submitButton = document.querySelector("#order");
 const outputLabel = document.querySelector("#presentation");
 const ul = document.querySelector("#recordlist");
-const imageElement = document.querySelector("#record_images");
+
+
 
 function orderRecord(event) {
 

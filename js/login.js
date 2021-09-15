@@ -6,6 +6,8 @@ var jEmail = "";
 
 
 
+
+
 // Hade först 'fetch' inuti 'validateForm()' men det kändes som om json-filen inte hann läsas in.
 // När jag la 'fetch' utanför funkar det...
 fetch(url)
@@ -26,7 +28,7 @@ fetch(url)
 function validateForm() {
 
 
-
+    const memberName = document.forms["olasForm"]["name"].value;
     const email = document.forms["olasForm"]["email"].value;
     const password = document.forms["olasForm"]["password"].value;
 
@@ -35,6 +37,7 @@ function validateForm() {
 
     if(email === jEmail && password === jPassword) {
 
+        localStorage.setItem("name", memberName);
         window.open("welcome_member.html");
         return true;
     }
